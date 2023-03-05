@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class RunnerAll</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class RunnerAll</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; RunnerAll</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">8.914s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testParalel()</td>
+<td class="success">8.914s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>20:51:32.962 [Test worker] INFO com.intuit.karate.Suite - backed up existing 'build\karate-reports' dir to: build\karate-reports_1677981092962
+20:51:32.993 [Test worker] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+20:51:34.728 [pool-1-thread-1] INFO c.intuit.karate.core.FeatureRuntime - classpath:LuloBanck/Delete/../Get/get.feature - call by tag at line 15: parallel
+20:51:35.525 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 &gt; GET https://dummyapi.io/data/v1/user?limit=47&amp;page=1
+1 &gt; app-id: 64013f90bb1e4f20bc431c5c
+1 &gt; User-Agent: PostmanRuntime/7.26.8
+1 &gt; Accept: */*
+1 &gt; Postman-Token: eb674846-89dd-4bcc-aed0-f62e936eff3c
+1 &gt; Host: dummyapi.io
+1 &gt; Accept-Encoding: gzip, deflate, br
+1 &gt; Connection: keep-alive
+
+
+20:51:35.525 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 &gt; GET https://dummyapi.io/data/v1/user?limit=18&amp;page=1
+1 &gt; User-Agent: PostmanRuntime/7.26.8
+1 &gt; Accept: */*
+1 &gt; Postman-Token: eb674846-89dd-4bcc-aed0-f62e936eff3c
+1 &gt; Host: dummyapi.io
+1 &gt; Accept-Encoding: gzip, deflate, br
+1 &gt; Connection: keep-alive
+1 &gt; app-id: 64013f90bb1e4f20bc431c5c
+
+
+20:51:35.541 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 &gt; POST https://dummyapi.io/data/v1/user/create
+1 &gt; User-Agent: PostmanRuntime/7.26.8
+1 &gt; Accept: */*
+1 &gt; Postman-Token: 7bd0c0d7-dcc7-47b2-a1b0-7133a3d05f28
+1 &gt; Host: dummyapi.io
+1 &gt; Accept-Encoding: gzip, deflate, br
+1 &gt; Connection: keep-alive
+1 &gt; app-id: 64013f90bb1e4f20bc431c5c
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 191
+{&quot;title&quot;:&quot;mr&quot;,&quot;firstName&quot;:&quot;Jane&quot;,&quot;lastName&quot;:&quot;Zapata&quot;,&quot;email&quot;:&quot;andres_bd72d91d-a970-40cd-90fc-9f8f99b734cf@yopmail.com&quot;,&quot;picture&quot;:&quot;https:\/\/randomuser.me\/api\/portraits\/med\/women\/56.jpg&quot;}
+
+20:51:36.147 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 606
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 2800
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Cache-Control: private
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Etag: W/&quot;af0-7SKmASbMwiSKOy/41+MWKe/WkGo&quot;
+1 &lt; Function-Execution-Id: c9wr1k1w2ui1
+1 &lt; Server: Google Frontend
+1 &lt; Strict-Transport-Security: max-age=31556926
+1 &lt; X-Cloud-Trace-Context: 156fe90f93f77c81f1cccb3a980a02dc;o=1
+1 &lt; X-Country-Code: CO
+1 &lt; Accept-Ranges: bytes
+1 &lt; Date: Sun, 05 Mar 2023 01:51:38 GMT
+1 &lt; X-Served-By: cache-bog2260023-BOG
+1 &lt; X-Cache: MISS
+1 &lt; X-Cache-Hits: 0
+1 &lt; X-Timer: S1677981098.773228,VS0,VE245
+1 &lt; Vary: cookie,need-authorization, x-fh-requested-host, accept-encoding
+1 &lt; alt-svc: h3=&quot;:443&quot;;ma=86400,h3-29=&quot;:443&quot;;ma=86400,h3-27=&quot;:443&quot;;ma=86400
+{&quot;data&quot;:[{&quot;id&quot;:&quot;60d0fe4f5311236168a10a05&quot;,&quot;title&quot;:&quot;miss&quot;,&quot;firstName&quot;:&quot;Andres PPRUEBA&quot;,&quot;lastName&quot;:&quot;Andres&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;60d0fe4f5311236168a10a06&quot;,&quot;title&quot;:&quot;dr&quot;,&quot;firstName&quot;:&quot;Alice&quot;,&quot;lastName&quot;:&quot;Brown&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/85.jpg&quot;},{&quot;id&quot;:&quot;60d0fe4f5311236168a10a07&quot;,&quot;title&quot;:&quot;mr&quot;,&quot;firstName&quot;:&quot;Sigmund&quot;,&quot;lastName&quot;:&quot;Myran&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/men/61.jpg&quot;},{&quot;id&quot;:&quot;60d0fe4f5311236168a10a09&quot;,&quot;title&quot;:&quot;miss&quot;,&quot;firstName&quot;:&quot;Clea&quot;,&quot;lastName&quot;:&quot;Dubois&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/11.jpg&quot;},{&quot;id&quot;:&quot;60d0fe4f5311236168a10a0b&quot;,&quot;title&quot;:&quot;miss&quot;,&quot;firstName&quot;:&quot;Margarita&quot;,&quot;lastName&quot;:&quot;Vicente&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/5.jpg&quot;},{&quot;id&quot;:&quot;60d0fe4f5311236168a10a0e&quot;,&quot;title&quot;:&quot;ms&quot;,&quot;firstName&quot;:&quot;Eve&quot;,&quot;lastName&quot;:&quot;Smith&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/men/74.jpg&quot;},{&quot;id&quot;:&quot;60d0fe4f5311236168a10a0f&quot;,&quot;title&quot;:&quot;mr&quot;,&quot;firstName&quot;:&quot;Kaya&quot;,&quot;lastName&quot;:&quot;Basoglu&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/men/59.jpg&quot;},{&quot;id&quot;:&quot;60d0fe4f5311236168a10a15&quot;,&quot;title&quot;:&quot;mrs&quot;,&quot;firstName&quot;:&quot;Frank&quot;,&quot;lastName&quot;:&quot;Smith&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/men/14.jpg&quot;},{&quot;id&quot;:&quot;60d0fe4f5311236168a10a19&quot;,&quot;title&quot;:&quot;ms&quot;,&quot;firstName&quot;:&quot;Robert&quot;,&quot;lastName&quot;:&quot;Gomez&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/86.jpg&quot;},{&quot;id&quot;:&quot;60d0fe4f5311236168a10a21&quot;,&quot;title&quot;:&quot;miss&quot;,&quot;firstName&quot;:&quot;Constance&quot;,&quot;lastName&quot;:&quot;Bourgeois&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/87.jpg&quot;},{&quot;id&quot;:&quot;60d0fe4f5311236168a10a25&quot;,&quot;title&quot;:&quot;ms&quot;,&quot;firstName&quot;:&quot;Kitty&quot;,&quot;lastName&quot;:&quot;Steward&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/78.jpg&quot;},{&quot;id&quot;:&quot;60d0fe4f5311236168a10a26&quot;,&quot;title&quot;:&quot;miss&quot;,&quot;firstName&quot;:&quot;Alice&quot;,&quot;lastName&quot;:&quot;Lee&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/men/53.jpg&quot;},{&quot;id&quot;:&quot;60d0fe4f5311236168a10a27&quot;,&quot;title&quot;:&quot;mr&quot;,&quot;firstName&quot;:&quot;Tomothy&quot;,&quot;lastName&quot;:&quot;Hawkins&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/men/48.jpg&quot;},{&quot;id&quot;:&quot;60d0fe4f5311236168a10a29&quot;,&quot;title&quot;:&quot;ms&quot;,&quot;firstName&quot;:&quot;Vanessa&quot;,&quot;lastName&quot;:&quot;Ramos&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/33.jpg&quot;},{&quot;id&quot;:&quot;60d0fe4f5311236168a10a2a&quot;,&quot;title&quot;:&quot;mrs&quot;,&quot;firstName&quot;:&quot;Susie&quot;,&quot;lastName&quot;:&quot;Harrison&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/20.jpg&quot;},{&quot;id&quot;:&quot;60d0fe4f5311236168a10a2b&quot;,&quot;title&quot;:&quot;mrs&quot;,&quot;firstName&quot;:&quot;Bob&quot;,&quot;lastName&quot;:&quot;Taylor&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/53.jpg&quot;},{&quot;id&quot;:&quot;60d0fe4f5311236168a10a2c&quot;,&quot;title&quot;:&quot;mr&quot;,&quot;firstName&quot;:&quot;Toralf&quot;,&quot;lastName&quot;:&quot;Streicher&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/men/80.jpg&quot;},{&quot;id&quot;:&quot;64028c714d4c6dca9e46700d&quot;,&quot;title&quot;:&quot;dr&quot;,&quot;firstName&quot;:&quot;Charlie&quot;,&quot;lastName&quot;:&quot;Garcia&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;}],&quot;total&quot;:134,&quot;page&quot;:1,&quot;limit&quot;:18}
+
+20:51:36.147 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 606
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 7187
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Cache-Control: private
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Etag: W/&quot;1c13-/IuvgoNN3XkHJJQMp28EQAqoOtk&quot;
+1 &lt; Function-Execution-Id: 0aq6di6uln21
+1 &lt; Server: Google Frontend
+1 &lt; Strict-Transport-Security: max-age=31556926
+1 &lt; X-Cloud-Trace-Context: 1d4f21412e00ec38d8d37cf1b669861a;o=1
+1 &lt; X-Country-Code: CO
+1 &lt; Accept-Ranges: bytes
+1 &lt; Date: Sun, 05 Mar 2023 01:51:38 GMT
+1 &lt; X-Served-By: cache-bog2260030-BOG
+1 &lt; X-Cache: MISS
+1 &lt; X-Cache-Hits: 0
+1 &lt; X-Timer: S1677981098.773144,VS0,VE247
+1 &lt; Vary: cookie,need-authorization, x-fh-requested-host, accept-encoding
+1 &lt; alt-svc: h3=&quot;:443&quot;;ma=86400,h3-29=&quot;:443&quot;;ma=86400,h3-27=&quot;:443&quot;;ma=86400
+{&quot;data&quot;:[{&quot;id&quot;:&quot;6402d6b0635d5cdd8ff0d92b&quot;,&quot;title&quot;:&quot;mrs&quot;,&quot;firstName&quot;:&quot;Bob&quot;,&quot;lastName&quot;:&quot;Brown&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6402d6e0635d5cb847f0d959&quot;,&quot;title&quot;:&quot;miss&quot;,&quot;firstName&quot;:&quot;Bob&quot;,&quot;lastName&quot;:&quot;Taylor&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6402d764635d5c212cf0d987&quot;,&quot;title&quot;:&quot;mrs&quot;,&quot;firstName&quot;:&quot;David&quot;,&quot;lastName&quot;:&quot;Sanchez&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6402dde5635d5c8656f0d9e3&quot;,&quot;title&quot;:&quot;dr&quot;,&quot;firstName&quot;:&quot;Frank&quot;,&quot;lastName&quot;:&quot;Johnson&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64036cdf664f6e58bffa8d0c&quot;,&quot;title&quot;:&quot;ms&quot;,&quot;firstName&quot;:&quot;Bob&quot;,&quot;lastName&quot;:&quot;Smith&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64036cf2664f6e414ffa8d3a&quot;,&quot;title&quot;:&quot;mr&quot;,&quot;firstName&quot;:&quot;Bob&quot;,&quot;lastName&quot;:&quot;Garcia&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64036d0a664f6e5447fa8d70&quot;,&quot;title&quot;:&quot;dr&quot;,&quot;firstName&quot;:&quot;Grace&quot;,&quot;lastName&quot;:&quot;Lee&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6403725c664f6ecccafaa199&quot;,&quot;title&quot;:&quot;miss&quot;,&quot;firstName&quot;:&quot;Bob&quot;,&quot;lastName&quot;:&quot;Johnson&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64037286664f6ef875faa2ca&quot;,&quot;title&quot;:&quot;mrs&quot;,&quot;firstName&quot;:&quot;Eve&quot;,&quot;lastName&quot;:&quot;Johnson&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64037b5b664f6e3b23fab600&quot;,&quot;title&quot;:&quot;ms&quot;,&quot;firstName&quot;:&quot;Frank&quot;,&quot;lastName&quot;:&quot;Taylor&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64037ca5664f6e830bfab9b0&quot;,&quot;title&quot;:&quot;ms&quot;,&quot;firstName&quot;:&quot;Bob&quot;,&quot;lastName&quot;:&quot;Lee&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64037cea664f6e4db8fab9d3&quot;,&quot;title&quot;:&quot;ms&quot;,&quot;firstName&quot;:&quot;Charlie&quot;,&quot;lastName&quot;:&quot;Taylor&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64037d4e664f6e6507faba28&quot;,&quot;title&quot;:&quot;mr&quot;,&quot;firstName&quot;:&quot;Frank&quot;,&quot;lastName&quot;:&quot;Taylor&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64037db3664f6e32affaba61&quot;,&quot;title&quot;:&quot;mrs&quot;,&quot;firstName&quot;:&quot;David&quot;,&quot;lastName&quot;:&quot;Johnson&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64037f19664f6e6e60fabaef&quot;,&quot;title&quot;:&quot;mrs&quot;,&quot;firstName&quot;:&quot;Alice&quot;,&quot;lastName&quot;:&quot;Taylor&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64037f3d664f6e3339fabc05&quot;,&quot;title&quot;:&quot;mr&quot;,&quot;firstName&quot;:&quot;Frank&quot;,&quot;lastName&quot;:&quot;Gomez&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64037f40664f6e7e70fabc1d&quot;,&quot;title&quot;:&quot;mrs&quot;,&quot;firstName&quot;:&quot;Andres&quot;,&quot;lastName&quot;:&quot;Garcia&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64037f77664f6e405dfabc31&quot;,&quot;title&quot;:&quot;miss&quot;,&quot;firstName&quot;:&quot;Eve&quot;,&quot;lastName&quot;:&quot;Taylor&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64038218664f6e71eafabe81&quot;,&quot;title&quot;:&quot;miss&quot;,&quot;firstName&quot;:&quot;Frank&quot;,&quot;lastName&quot;:&quot;Garcia&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64038849664f6e484bfabfb0&quot;,&quot;title&quot;:&quot;mrs&quot;,&quot;firstName&quot;:&quot;Bob&quot;,&quot;lastName&quot;:&quot;Garcia&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64038f34664f6e9ef3fac75f&quot;,&quot;title&quot;:&quot;mrs&quot;,&quot;firstName&quot;:&quot;David&quot;,&quot;lastName&quot;:&quot;Smith&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;640390f2664f6e3920fac8df&quot;,&quot;title&quot;:&quot;dr&quot;,&quot;firstName&quot;:&quot;Bob&quot;,&quot;lastName&quot;:&quot;Garcia&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;640391ba43b79d3efb33821d&quot;,&quot;title&quot;:&quot;mrs&quot;,&quot;firstName&quot;:&quot;Charlie&quot;,&quot;lastName&quot;:&quot;Johnson&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;640391d243b79d17a333824d&quot;,&quot;title&quot;:&quot;mr&quot;,&quot;firstName&quot;:&quot;Eve&quot;,&quot;lastName&quot;:&quot;Lee&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64039285664f6e25c6faca51&quot;,&quot;title&quot;:&quot;ms&quot;,&quot;firstName&quot;:&quot;David&quot;,&quot;lastName&quot;:&quot;Brown&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6403930b664f6e729afacac3&quot;,&quot;title&quot;:&quot;ms&quot;,&quot;firstName&quot;:&quot;Charlie&quot;,&quot;lastName&quot;:&quot;Smith&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6403957a43b79dd85933830a&quot;,&quot;title&quot;:&quot;ms&quot;,&quot;firstName&quot;:&quot;Bob&quot;,&quot;lastName&quot;:&quot;Smith&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;640395a5664f6edc14facb9c&quot;,&quot;title&quot;:&quot;mr&quot;,&quot;firstName&quot;:&quot;Eve&quot;,&quot;lastName&quot;:&quot;Taylor&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6403961b664f6e9e08faccc9&quot;,&quot;title&quot;:&quot;mr&quot;,&quot;firstName&quot;:&quot;David&quot;,&quot;lastName&quot;:&quot;Lee&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64039892664f6e149dface88&quot;,&quot;title&quot;:&quot;miss&quot;,&quot;firstName&quot;:&quot;Charlie&quot;,&quot;lastName&quot;:&quot;Smith&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64039dd9664f6e8276fad2f8&quot;,&quot;title&quot;:&quot;mr&quot;,&quot;firstName&quot;:&quot;Grace&quot;,&quot;lastName&quot;:&quot;Brown&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64039e26664f6ebd58fad482&quot;,&quot;title&quot;:&quot;ms&quot;,&quot;firstName&quot;:&quot;Frank&quot;,&quot;lastName&quot;:&quot;Johnson&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6403a5a6664f6e449cfaee08&quot;,&quot;title&quot;:&quot;ms&quot;,&quot;firstName&quot;:&quot;Grace&quot;,&quot;lastName&quot;:&quot;Garcia&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6403a617664f6e2fdafaf066&quot;,&quot;title&quot;:&quot;mrs&quot;,&quot;firstName&quot;:&quot;Grace&quot;,&quot;lastName&quot;:&quot;Johnson&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6403a69843b79dc26b3385f4&quot;,&quot;title&quot;:&quot;mrs&quot;,&quot;firstName&quot;:&quot;Grace&quot;,&quot;lastName&quot;:&quot;Smith&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6403a6b9664f6e3d8afaf0ce&quot;,&quot;title&quot;:&quot;ms&quot;,&quot;firstName&quot;:&quot;Alice&quot;,&quot;lastName&quot;:&quot;Taylor&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6403a784664f6e3af1faf17f&quot;,&quot;title&quot;:&quot;dr&quot;,&quot;firstName&quot;:&quot;Alice&quot;,&quot;lastName&quot;:&quot;Lee&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6403a79b664f6e15cafaf202&quot;,&quot;title&quot;:&quot;mrs&quot;,&quot;firstName&quot;:&quot;Charlie&quot;,&quot;lastName&quot;:&quot;Lee&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6403b1d0664f6e46ddfaf442&quot;,&quot;title&quot;:&quot;miss&quot;,&quot;firstName&quot;:&quot;Alice&quot;,&quot;lastName&quot;:&quot;Lee&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6403b1ea664f6e88e0faf4a0&quot;,&quot;title&quot;:&quot;dr&quot;,&quot;firstName&quot;:&quot;Frank&quot;,&quot;lastName&quot;:&quot;Taylor&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6403bd8bc36f73652be786be&quot;,&quot;title&quot;:&quot;mr&quot;,&quot;firstName&quot;:&quot;sasaas&quot;,&quot;lastName&quot;:&quot;Andres&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6403c037c36f733b9ee78787&quot;,&quot;title&quot;:&quot;mr&quot;,&quot;firstName&quot;:&quot;Rodriguez&quot;,&quot;lastName&quot;:&quot;#(randomLastName)&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6403c089c36f73ae78e78798&quot;,&quot;title&quot;:&quot;mr&quot;,&quot;firstName&quot;:&quot;Mark&quot;,&quot;lastName&quot;:&quot;Zapata&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6403d56dd82b1d73b122464b&quot;,&quot;title&quot;:&quot;mr&quot;,&quot;firstName&quot;:&quot;Jane&quot;,&quot;lastName&quot;:&quot;Restrepo&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6403da28c36f73db6ae78ea3&quot;,&quot;title&quot;:&quot;mr&quot;,&quot;firstName&quot;:&quot;David&quot;,&quot;lastName&quot;:&quot;Orozco&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6403db82c36f73740ee78eb6&quot;,&quot;title&quot;:&quot;mr&quot;,&quot;firstName&quot;:&quot;Lisa&quot;,&quot;lastName&quot;:&quot;Orozco&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6403dbedc36f73f017e78ecc&quot;,&quot;title&quot;:&quot;mr&quot;,&quot;firstName&quot;:&quot;Karen&quot;,&quot;lastName&quot;:&quot;lopera&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;}],&quot;total&quot;:134,&quot;page&quot;:1,&quot;limit&quot;:47}
+
+20:51:36.226 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 &gt; DELETE https://dummyapi.io/data/v1/user/6402d6b0635d5cdd8ff0d92b
+2 &gt; app-id: 64013f90bb1e4f20bc431c5c
+2 &gt; User-Agent: PostmanRuntime/7.26.8
+2 &gt; Accept: */*
+2 &gt; Postman-Token: eb674846-89dd-4bcc-aed0-f62e936eff3c
+2 &gt; Host: dummyapi.io
+2 &gt; Accept-Encoding: gzip, deflate, br
+2 &gt; Connection: keep-alive
+
+
+20:51:36.460 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 234
+2 &lt; 200
+2 &lt; Connection: keep-alive
+2 &lt; Content-Length: 33
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Cache-Control: private
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Etag: W/&quot;21-wXdANYkUOPH53+y7441rVtuZDi8&quot;
+2 &lt; Function-Execution-Id: 0aq6bhbhhx48
+2 &lt; Server: Google Frontend
+2 &lt; Strict-Transport-Security: max-age=31556926
+2 &lt; X-Cloud-Trace-Context: 848f0eabd4fb4aa22e6ae2ed25e7bb33
+2 &lt; X-Country-Code: CO
+2 &lt; Accept-Ranges: bytes
+2 &lt; Date: Sun, 05 Mar 2023 01:51:38 GMT
+2 &lt; X-Served-By: cache-bog2260036-BOG
+2 &lt; X-Cache: MISS
+2 &lt; X-Cache-Hits: 0
+2 &lt; X-Timer: S1677981098.194985,VS0,VE151
+2 &lt; Vary: cookie,need-authorization, x-fh-requested-host, accept-encoding
+2 &lt; alt-svc: h3=&quot;:443&quot;;ma=86400,h3-29=&quot;:443&quot;;ma=86400,h3-27=&quot;:443&quot;;ma=86400
+{&quot;id&quot;:&quot;6402d6b0635d5cdd8ff0d92b&quot;}
+
+---------------------------------------------------------
+feature: classpath:LuloBanck/Delete/delete.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 1,7579
+---------------------------------------------------------
+
+20:51:37.742 [pool-2-thread-1] INFO com.intuit.karate.Suite - &lt;&lt;pass&gt;&gt; feature 1 of 3 (2 remaining) classpath:LuloBanck/Delete/delete.feature
+---------------------------------------------------------
+feature: classpath:LuloBanck/Get/get.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 1,4815
+---------------------------------------------------------
+
+20:51:37.851 [pool-2-thread-1] INFO com.intuit.karate.Suite - &lt;&lt;pass&gt;&gt; feature 2 of 3 (1 remaining) classpath:LuloBanck/Get/get.feature
+20:51:38.867 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 3326
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 299
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Cache-Control: private
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Etag: W/&quot;12b-mxkjVNpYO4hdc0UZxh+FUKCgm+E&quot;
+1 &lt; Function-Execution-Id: dz6yma9gph63
+1 &lt; Server: Google Frontend
+1 &lt; Strict-Transport-Security: max-age=31556926
+1 &lt; X-Cloud-Trace-Context: 37d5fc5db913845afc5853d5ef4f8289;o=1
+1 &lt; X-Country-Code: CO
+1 &lt; Accept-Ranges: bytes
+1 &lt; Date: Sun, 05 Mar 2023 01:51:40 GMT
+1 &lt; X-Served-By: cache-bog2260030-BOG
+1 &lt; X-Cache: MISS
+1 &lt; X-Cache-Hits: 0
+1 &lt; X-Timer: S1677981098.773774,VS0,VE2969
+1 &lt; Vary: cookie,need-authorization, x-fh-requested-host, accept-encoding
+1 &lt; alt-svc: h3=&quot;:443&quot;;ma=86400,h3-29=&quot;:443&quot;;ma=86400,h3-27=&quot;:443&quot;;ma=86400
+{&quot;id&quot;:&quot;6403f5acdba9c129a7e9dc41&quot;,&quot;title&quot;:&quot;mr&quot;,&quot;firstName&quot;:&quot;Jane&quot;,&quot;lastName&quot;:&quot;Zapata&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;,&quot;email&quot;:&quot;andres_bd72d91d-a970-40cd-90fc-9f8f99b734cf@yopmail.com&quot;,&quot;registerDate&quot;:&quot;2023-03-05T01:51:40.648Z&quot;,&quot;updatedDate&quot;:&quot;2023-03-05T01:51:40.648Z&quot;}
+
+---------------------------------------------------------
+feature: classpath:LuloBanck/Post/post.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 4,1556
+---------------------------------------------------------
+
+20:51:38.955 [pool-2-thread-1] INFO com.intuit.karate.Suite - &lt;&lt;pass&gt;&gt; feature 3 of 3 (0 remaining) classpath:LuloBanck/Post/post.feature
+Karate version: 1.2.0.RC5
+======================================================
+elapsed:   7,31 | threads:    4 | thread time: 7,40 
+features:     3 | skipped:    0 | efficiency: 0,25
+scenarios:    3 | passed:     3 | failed: 0
+======================================================
+
+HTML report: (paste into browser to view) | Karate version: 1.2.0.RC5
+file:///C:/Users/handr/IdeaProjects/Karate_LuloBanck/build/karate-reports/karate-summary.html
+===================================================================
+
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>mar 04, 2023 8:51:39 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFORMACIÓN: File 'C:\Users\handr\IdeaProjects\Karate_LuloBanck\build\karate-reports\LuloBanck.Delete.delete.json' contains 1 features
+mar 04, 2023 8:51:39 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFORMACIÓN: File 'C:\Users\handr\IdeaProjects\Karate_LuloBanck\build\karate-reports\LuloBanck.Get.get.json' contains 1 features
+mar 04, 2023 8:51:39 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFORMACIÓN: File 'C:\Users\handr\IdeaProjects\Karate_LuloBanck\build\karate-reports\LuloBanck.Post.post.json' contains 1 features
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.1</a> at 04-mar-2023 20:51:40</p>
+</div>
+</div>
+</body>
+</html>

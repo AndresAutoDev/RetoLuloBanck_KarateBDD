@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: LuloBanck/Delete/delete.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Reto-LuloBanck</td>
+      <td>04 mar 2023, 20:51</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">LuloBanck/Delete/delete.feature</td>
+          <td      class="passed"    >29</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">29</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="3202900200">3.202</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3605917254.html">@parallel</a>
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">LuloBanck/Delete/delete.feature</span>
+
+
+</div>
+
+        <div class="description indention">Obtener usuarios de una API</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.008</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'https://dummyapi.io/data/v1'</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header app-id = '64013f90bb1e4f20bc431c5c'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header User-Agent = 'PostmanRuntime/7.26.8'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Accept = '*/*'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Postman-Token = '4e6b169e-9703-468d-8add-b072360e6cb2'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Host = 'dummyapi.io'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Accept-Encoding = 'gzip, deflate, br'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3605917254.html">@parallel</a>
+</div>
+
+
+  <span class="lead-duration duration">3.194</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">se consume la api de eliminar usuario con usuario aleatorio</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-3" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-4">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-4" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">call read(&quot;../Get/get.feature@parallel&quot;)</span>
+
+  <span class="lead-duration duration">1.477</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">LuloBanck/Delete/../Get/get.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url 'https://dummyapi.io/data/v1/user'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">header User-Agent = 'PostmanRuntime/7.26.8'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">header Accept = '*/*'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">header Postman-Token = 'eb674846-89dd-4bcc-aed0-f62e936eff3c'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">header Host = 'dummyapi.io'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">header Accept-Encoding = 'gzip, deflate, br'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">header Connection =  'keep-alive'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">header app-id = '64013f90bb1e4f20bc431c5c'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def randomLimit = 5 + parseInt(Math.random() * ((50 - 5) + 1))</span>
+
+  <span class="lead-duration duration">0.040</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">param page = 1</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">param limit = randomLimit</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method Get</span>
+
+  <span class="lead-duration duration">1.364</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>20:51:35.541 request:
+1 &gt; GET https://dummyapi.io/data/v1/user?limit=47&amp;page=1
+1 &gt; app-id: 64013f90bb1e4f20bc431c5c
+1 &gt; User-Agent: PostmanRuntime/7.26.8
+1 &gt; Accept: */*
+1 &gt; Postman-Token: eb674846-89dd-4bcc-aed0-f62e936eff3c
+1 &gt; Host: dummyapi.io
+1 &gt; Accept-Encoding: gzip, deflate, br
+1 &gt; Connection: keep-alive
+
+
+20:51:36.163 response time in milliseconds: 606
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 7187
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Cache-Control: private
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Etag: W/&quot;1c13-/IuvgoNN3XkHJJQMp28EQAqoOtk&quot;
+1 &lt; Function-Execution-Id: 0aq6di6uln21
+1 &lt; Server: Google Frontend
+1 &lt; Strict-Transport-Security: max-age=31556926
+1 &lt; X-Cloud-Trace-Context: 1d4f21412e00ec38d8d37cf1b669861a;o=1
+1 &lt; X-Country-Code: CO
+1 &lt; Accept-Ranges: bytes
+1 &lt; Date: Sun, 05 Mar 2023 01:51:38 GMT
+1 &lt; X-Served-By: cache-bog2260030-BOG
+1 &lt; X-Cache: MISS
+1 &lt; X-Cache-Hits: 0
+1 &lt; X-Timer: S1677981098.773144,VS0,VE247
+1 &lt; Vary: cookie,need-authorization, x-fh-requested-host, accept-encoding
+1 &lt; alt-svc: h3=&quot;:443&quot;;ma=86400,h3-29=&quot;:443&quot;;ma=86400,h3-27=&quot;:443&quot;;ma=86400
+{&quot;data&quot;:[{&quot;id&quot;:&quot;6402d6b0635d5cdd8ff0d92b&quot;,&quot;title&quot;:&quot;mrs&quot;,&quot;firstName&quot;:&quot;Bob&quot;,&quot;lastName&quot;:&quot;Brown&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6402d6e0635d5cb847f0d959&quot;,&quot;title&quot;:&quot;miss&quot;,&quot;firstName&quot;:&quot;Bob&quot;,&quot;lastName&quot;:&quot;Taylor&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6402d764635d5c212cf0d987&quot;,&quot;title&quot;:&quot;mrs&quot;,&quot;firstName&quot;:&quot;David&quot;,&quot;lastName&quot;:&quot;Sanchez&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6402dde5635d5c8656f0d9e3&quot;,&quot;title&quot;:&quot;dr&quot;,&quot;firstName&quot;:&quot;Frank&quot;,&quot;lastName&quot;:&quot;Johnson&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64036cdf664f6e58bffa8d0c&quot;,&quot;title&quot;:&quot;ms&quot;,&quot;firstName&quot;:&quot;Bob&quot;,&quot;lastName&quot;:&quot;Smith&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64036cf2664f6e414ffa8d3a&quot;,&quot;title&quot;:&quot;mr&quot;,&quot;firstName&quot;:&quot;Bob&quot;,&quot;lastName&quot;:&quot;Garcia&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64036d0a664f6e5447fa8d70&quot;,&quot;title&quot;:&quot;dr&quot;,&quot;firstName&quot;:&quot;Grace&quot;,&quot;lastName&quot;:&quot;Lee&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6403725c664f6ecccafaa199&quot;,&quot;title&quot;:&quot;miss&quot;,&quot;firstName&quot;:&quot;Bob&quot;,&quot;lastName&quot;:&quot;Johnson&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64037286664f6ef875faa2ca&quot;,&quot;title&quot;:&quot;mrs&quot;,&quot;firstName&quot;:&quot;Eve&quot;,&quot;lastName&quot;:&quot;Johnson&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64037b5b664f6e3b23fab600&quot;,&quot;title&quot;:&quot;ms&quot;,&quot;firstName&quot;:&quot;Frank&quot;,&quot;lastName&quot;:&quot;Taylor&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64037ca5664f6e830bfab9b0&quot;,&quot;title&quot;:&quot;ms&quot;,&quot;firstName&quot;:&quot;Bob&quot;,&quot;lastName&quot;:&quot;Lee&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64037cea664f6e4db8fab9d3&quot;,&quot;title&quot;:&quot;ms&quot;,&quot;firstName&quot;:&quot;Charlie&quot;,&quot;lastName&quot;:&quot;Taylor&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64037d4e664f6e6507faba28&quot;,&quot;title&quot;:&quot;mr&quot;,&quot;firstName&quot;:&quot;Frank&quot;,&quot;lastName&quot;:&quot;Taylor&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64037db3664f6e32affaba61&quot;,&quot;title&quot;:&quot;mrs&quot;,&quot;firstName&quot;:&quot;David&quot;,&quot;lastName&quot;:&quot;Johnson&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64037f19664f6e6e60fabaef&quot;,&quot;title&quot;:&quot;mrs&quot;,&quot;firstName&quot;:&quot;Alice&quot;,&quot;lastName&quot;:&quot;Taylor&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64037f3d664f6e3339fabc05&quot;,&quot;title&quot;:&quot;mr&quot;,&quot;firstName&quot;:&quot;Frank&quot;,&quot;lastName&quot;:&quot;Gomez&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64037f40664f6e7e70fabc1d&quot;,&quot;title&quot;:&quot;mrs&quot;,&quot;firstName&quot;:&quot;Andres&quot;,&quot;lastName&quot;:&quot;Garcia&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64037f77664f6e405dfabc31&quot;,&quot;title&quot;:&quot;miss&quot;,&quot;firstName&quot;:&quot;Eve&quot;,&quot;lastName&quot;:&quot;Taylor&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64038218664f6e71eafabe81&quot;,&quot;title&quot;:&quot;miss&quot;,&quot;firstName&quot;:&quot;Frank&quot;,&quot;lastName&quot;:&quot;Garcia&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64038849664f6e484bfabfb0&quot;,&quot;title&quot;:&quot;mrs&quot;,&quot;firstName&quot;:&quot;Bob&quot;,&quot;lastName&quot;:&quot;Garcia&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64038f34664f6e9ef3fac75f&quot;,&quot;title&quot;:&quot;mrs&quot;,&quot;firstName&quot;:&quot;David&quot;,&quot;lastName&quot;:&quot;Smith&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;640390f2664f6e3920fac8df&quot;,&quot;title&quot;:&quot;dr&quot;,&quot;firstName&quot;:&quot;Bob&quot;,&quot;lastName&quot;:&quot;Garcia&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;640391ba43b79d3efb33821d&quot;,&quot;title&quot;:&quot;mrs&quot;,&quot;firstName&quot;:&quot;Charlie&quot;,&quot;lastName&quot;:&quot;Johnson&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;640391d243b79d17a333824d&quot;,&quot;title&quot;:&quot;mr&quot;,&quot;firstName&quot;:&quot;Eve&quot;,&quot;lastName&quot;:&quot;Lee&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64039285664f6e25c6faca51&quot;,&quot;title&quot;:&quot;ms&quot;,&quot;firstName&quot;:&quot;David&quot;,&quot;lastName&quot;:&quot;Brown&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6403930b664f6e729afacac3&quot;,&quot;title&quot;:&quot;ms&quot;,&quot;firstName&quot;:&quot;Charlie&quot;,&quot;lastName&quot;:&quot;Smith&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6403957a43b79dd85933830a&quot;,&quot;title&quot;:&quot;ms&quot;,&quot;firstName&quot;:&quot;Bob&quot;,&quot;lastName&quot;:&quot;Smith&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;640395a5664f6edc14facb9c&quot;,&quot;title&quot;:&quot;mr&quot;,&quot;firstName&quot;:&quot;Eve&quot;,&quot;lastName&quot;:&quot;Taylor&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6403961b664f6e9e08faccc9&quot;,&quot;title&quot;:&quot;mr&quot;,&quot;firstName&quot;:&quot;David&quot;,&quot;lastName&quot;:&quot;Lee&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64039892664f6e149dface88&quot;,&quot;title&quot;:&quot;miss&quot;,&quot;firstName&quot;:&quot;Charlie&quot;,&quot;lastName&quot;:&quot;Smith&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64039dd9664f6e8276fad2f8&quot;,&quot;title&quot;:&quot;mr&quot;,&quot;firstName&quot;:&quot;Grace&quot;,&quot;lastName&quot;:&quot;Brown&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;64039e26664f6ebd58fad482&quot;,&quot;title&quot;:&quot;ms&quot;,&quot;firstName&quot;:&quot;Frank&quot;,&quot;lastName&quot;:&quot;Johnson&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6403a5a6664f6e449cfaee08&quot;,&quot;title&quot;:&quot;ms&quot;,&quot;firstName&quot;:&quot;Grace&quot;,&quot;lastName&quot;:&quot;Garcia&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6403a617664f6e2fdafaf066&quot;,&quot;title&quot;:&quot;mrs&quot;,&quot;firstName&quot;:&quot;Grace&quot;,&quot;lastName&quot;:&quot;Johnson&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6403a69843b79dc26b3385f4&quot;,&quot;title&quot;:&quot;mrs&quot;,&quot;firstName&quot;:&quot;Grace&quot;,&quot;lastName&quot;:&quot;Smith&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6403a6b9664f6e3d8afaf0ce&quot;,&quot;title&quot;:&quot;ms&quot;,&quot;firstName&quot;:&quot;Alice&quot;,&quot;lastName&quot;:&quot;Taylor&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6403a784664f6e3af1faf17f&quot;,&quot;title&quot;:&quot;dr&quot;,&quot;firstName&quot;:&quot;Alice&quot;,&quot;lastName&quot;:&quot;Lee&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6403a79b664f6e15cafaf202&quot;,&quot;title&quot;:&quot;mrs&quot;,&quot;firstName&quot;:&quot;Charlie&quot;,&quot;lastName&quot;:&quot;Lee&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6403b1d0664f6e46ddfaf442&quot;,&quot;title&quot;:&quot;miss&quot;,&quot;firstName&quot;:&quot;Alice&quot;,&quot;lastName&quot;:&quot;Lee&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6403b1ea664f6e88e0faf4a0&quot;,&quot;title&quot;:&quot;dr&quot;,&quot;firstName&quot;:&quot;Frank&quot;,&quot;lastName&quot;:&quot;Taylor&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6403bd8bc36f73652be786be&quot;,&quot;title&quot;:&quot;mr&quot;,&quot;firstName&quot;:&quot;sasaas&quot;,&quot;lastName&quot;:&quot;Andres&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6403c037c36f733b9ee78787&quot;,&quot;title&quot;:&quot;mr&quot;,&quot;firstName&quot;:&quot;Rodriguez&quot;,&quot;lastName&quot;:&quot;#(randomLastName)&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6403c089c36f73ae78e78798&quot;,&quot;title&quot;:&quot;mr&quot;,&quot;firstName&quot;:&quot;Mark&quot;,&quot;lastName&quot;:&quot;Zapata&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6403d56dd82b1d73b122464b&quot;,&quot;title&quot;:&quot;mr&quot;,&quot;firstName&quot;:&quot;Jane&quot;,&quot;lastName&quot;:&quot;Restrepo&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6403da28c36f73db6ae78ea3&quot;,&quot;title&quot;:&quot;mr&quot;,&quot;firstName&quot;:&quot;David&quot;,&quot;lastName&quot;:&quot;Orozco&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6403db82c36f73740ee78eb6&quot;,&quot;title&quot;:&quot;mr&quot;,&quot;firstName&quot;:&quot;Lisa&quot;,&quot;lastName&quot;:&quot;Orozco&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;},{&quot;id&quot;:&quot;6403dbedc36f73f017e78ecc&quot;,&quot;title&quot;:&quot;mr&quot;,&quot;firstName&quot;:&quot;Karen&quot;,&quot;lastName&quot;:&quot;lopera&quot;,&quot;picture&quot;:&quot;https://randomuser.me/api/portraits/med/women/56.jpg&quot;}],&quot;total&quot;:134,&quot;page&quot;:1,&quot;limit&quot;:47}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match $..id contains '#notnull'</span>
+
+  <span class="lead-duration duration">0.024</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.limit == randomLimit</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.page == 1</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">def idRando = $..data[0].id</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/user/' + idRando</span>
+
+  <span class="lead-duration duration">0.034</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Delete</span>
+
+  <span class="lead-duration duration">0.237</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>20:51:36.226 request:
+2 &gt; DELETE https://dummyapi.io/data/v1/user/6402d6b0635d5cdd8ff0d92b
+2 &gt; app-id: 64013f90bb1e4f20bc431c5c
+2 &gt; User-Agent: PostmanRuntime/7.26.8
+2 &gt; Accept: */*
+2 &gt; Postman-Token: eb674846-89dd-4bcc-aed0-f62e936eff3c
+2 &gt; Host: dummyapi.io
+2 &gt; Accept-Encoding: gzip, deflate, br
+2 &gt; Connection: keep-alive
+
+
+20:51:36.460 response time in milliseconds: 234
+2 &lt; 200
+2 &lt; Connection: keep-alive
+2 &lt; Content-Length: 33
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Cache-Control: private
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Etag: W/&quot;21-wXdANYkUOPH53+y7441rVtuZDi8&quot;
+2 &lt; Function-Execution-Id: 0aq6bhbhhx48
+2 &lt; Server: Google Frontend
+2 &lt; Strict-Transport-Security: max-age=31556926
+2 &lt; X-Cloud-Trace-Context: 848f0eabd4fb4aa22e6ae2ed25e7bb33
+2 &lt; X-Country-Code: CO
+2 &lt; Accept-Ranges: bytes
+2 &lt; Date: Sun, 05 Mar 2023 01:51:38 GMT
+2 &lt; X-Served-By: cache-bog2260036-BOG
+2 &lt; X-Cache: MISS
+2 &lt; X-Cache-Hits: 0
+2 &lt; X-Timer: S1677981098.194985,VS0,VE151
+2 &lt; Vary: cookie,need-authorization, x-fh-requested-host, accept-encoding
+2 &lt; alt-svc: h3=&quot;:443&quot;;ma=86400,h3-29=&quot;:443&quot;;ma=86400,h3-27=&quot;:443&quot;;ma=86400
+{&quot;id&quot;:&quot;6402d6b0635d5cdd8ff0d92b&quot;}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
